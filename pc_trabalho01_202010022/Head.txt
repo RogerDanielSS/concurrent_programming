@@ -1,0 +1,43 @@
+Ideia de programa: Placar de volei
+
+Botoes:
+2x Aumentar placar
+2x Diminuir placar
+Zerar placar
+Apito
+
+Caixa de texto:
+2x Inserir nome da equipe
+
+Figuras:
+Escudos genéricos
+
+Menu:
+Diminuir placar - Ativado/Desativado
+Tema Escuro
+
+
+
+Modelo - Histórico
+
+imprimir;
+guardar; -> Relaciona com a classe dados
+
+
+Criar um método que pega as strings dos TextFields e os inteiros do placar e armazena. (Talvez também salvar a data da partida)
+
+Dados - Histórico
+
+Armazena o arquivo que recebe o histórico
+
+
+
+Controladores:
+Tela inicial
+Histórico
+
+
+Erros que estão ocorrendo:
+	O arquivo está mantendo somente o último dado salvo
+	Uma série de excessões no terminal quando eu finalizo a partida   ##Resolvido##
+	arquivo de audio não está sendo encontrado para apitar  ##Resolvido##

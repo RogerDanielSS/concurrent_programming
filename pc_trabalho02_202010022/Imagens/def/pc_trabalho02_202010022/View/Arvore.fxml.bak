@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+idade_PedroNeto_TextField_out
+
+<AnchorPane fx:id="AnchorPane_Arvore" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controll.ArvoreController">
+   <children>
+      <ImageView fitHeight="603.0" fitWidth="750.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Wallpaper_Camera.jpg" />
+         </image>
+      </ImageView>
+      <Line fx:id="JoseTiago_Line_out" endX="100.0" fill="#ef930b" layoutX="114.0" layoutY="260.0" startX="-10.0" stroke="#ef930b" strokeWidth="3.0" visible="false" />
+      <Line fx:id="JoseJoao_Line_out" endX="180.0" fill="#ef930b" layoutX="107.0" layoutY="329.0" rotate="30.0" startX="-100.0" stroke="#ef930b" strokeWidth="3.0" visible="false" />
+      <Line fx:id="TiagoTiagoJr_Line_out" endX="100.0" fill="#ef930b" layoutX="312.0" layoutY="260.0" startX="-10.0" stroke="#ef930b" strokeWidth="3.0" visible="false" />
+      <Line fx:id="Pedro_PedroJr_Line_out" endX="100.0" fill="#ef930b" layoutX="320.0" layoutY="90.0" startX="-10.0" stroke="#ef930b" strokeWidth="3.0" visible="false" />
+      <Line fx:id="PedroJr_PdroNeto_Line_ou" endX="100.0" fill="#ef930b" layoutX="492.0" layoutY="88.0" startX="-10.0" stroke="#ef930b" strokeWidth="3.0" visible="false" />
+      <Line fx:id="Jose_Pedro_Line_out" endX="180.0" fill="#ef930b" layoutX="130.0" layoutY="163.0" rotate="-30.0" startX="-100.0" stroke="#ef930b" strokeWidth="3.0" visible="false" />
+      <AnchorPane fx:id="Jose_AncherPane_out" layoutX="13.0" layoutY="190.0" prefHeight="110.0" prefWidth="110.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <VBox alignment="CENTER" prefHeight="110.0" prefWidth="110.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="81.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Jose.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label layoutX="10.0" layoutY="10.0" text="(Patriarca)">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Nome: Jose">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="idade_Jose_TextField_out" editable="false" style="-fx-background-color: white;" text="Idade:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></TextField>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="-10.0" />
+         </padding>
+      </AnchorPane>
+      <AnchorPane fx:id="Pedro_AnchorPane_out" layoutX="205.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="110.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="110.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="74.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Pedro.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label layoutX="10.0" layoutY="10.0" text="(Filho 1)">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Nome: Pedro">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="idade_Pedro_TextField_out" editable="false" style="-fx-background-color: white;" text="Idade:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="-10.0" />
+         </padding>
+      </AnchorPane>
+      <AnchorPane fx:id="PedroJr_AnchorPane_out" layoutX="394.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="110.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="110.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="74.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/PedroJr.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label layoutX="10.0" layoutY="10.0" text="(Neto 1)">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Nome: Pedro Jr">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="idade_PedroJr_TextField_out" editable="false" style="-fx-background-color: white;" text="Idade:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="-10.0" />
+         </padding>
+      </AnchorPane>
+      <AnchorPane fx:id="PedroNeto_AnchorPane_out" layoutX="574.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="110.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="110.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="74.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/PedroNeto.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label layoutX="10.0" layoutY="10.0" text="(Bisneto 1)">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Nome: P. Neto">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="idade_PedroNeto_TextField_out" editable="false" style="-fx-background-color: white;" text="Idade:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="-10.0" />
+         </padding>
+      </AnchorPane>
+      <AnchorPane fx:id="Tiago_AnchorPane_out" layoutX="205.0" layoutY="192.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="110.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="110.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="74.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Tiago.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label layoutX="10.0" layoutY="10.0" text="(Filho 2)">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Nome: Tiago">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="idade_Tiago_TextField_out" editable="false" style="-fx-background-color: white;" text="Idade:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="-10.0" />
+         </padding>
+      </AnchorPane>
+      <AnchorPane fx:id="TiagoJr_AnchorPane_out" layoutX="394.0" layoutY="197.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="110.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="110.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="74.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/TiagoJr.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label layoutX="10.0" layoutY="10.0" text="(Neto 2)">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Nome: Tiago Jr">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="idade_TiagoJr_TextField_out" editable="false" style="-fx-background-color: white;" text="Idade:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="-10.0" />
+         </padding>
+      </AnchorPane>
+      <AnchorPane fx:id="Joao_AnchorPane_out" layoutX="205.0" layoutY="350.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="110.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="110.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="74.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Joao.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label layoutX="10.0" layoutY="10.0" text="(Filho 3)">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Nome: Joao">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="idade_Joao_TextField_out" editable="false" style="-fx-background-color: white;" text="Idade:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="-10.0" />
+         </padding>
+      </AnchorPane>
+      <Button fx:id="Voltar_Button_in" layoutX="24.0" layoutY="25.0" mnemonicParsing="false" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-back-100.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="Restart_Button_in" layoutX="80.0" layoutY="25.0" mnemonicParsing="false" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-play-100.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField editable="false" layoutX="550.0" layoutY="390.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="170.0" style="-fx-background-color: rgba(200, 200, 200, 0.55);" text="2000">
+         <font>
+            <Font name="Cambria" size="48.0" />
+         </font></TextField>
+   </children>
+</AnchorPane>

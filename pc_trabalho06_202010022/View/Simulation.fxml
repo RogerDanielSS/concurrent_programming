@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="AnchorPane_screen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: rgb(25, 25, 25);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controll.SimulationController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="842.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/background.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="animation_AnchorPane" style="-fx-background-color: rgba(0, 0, 0, 0.25);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane layoutX="23.0" layoutY="16.0">
+               <children>
+                  <Button fx:id="home_Button" mnemonicParsing="false" style="-fx-background-color: rgba(0,0,0, 0); -fx-background-radius: 10;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Cambria" size="26.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/home_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets bottom="4.0" right="15.0" top="4.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="adjusts_Button" layoutX="215.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: rgba(0,0,0, 0); -fx-background-radius: 10;" GridPane.columnIndex="1">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Cambria" size="26.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/adjusts_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets bottom="4.0" left="5.0" right="5.0" top="4.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="start_Button" mnemonicParsing="false" style="-fx-background-color: rgba(0,0,0, 0); -fx-background-radius: 10;" GridPane.columnIndex="2">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Cambria" size="26.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="start_imageView" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/play_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets bottom="4.0" left="15.0" top="4.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <AnchorPane layoutX="18.0" layoutY="125.0" prefHeight="350.0" prefWidth="570.0" style="-fx-border-color: white;">
+               <children>
+                  <GridPane hgap="20.0" layoutX="18.0" layoutY="37.0" vgap="20.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <HBox GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <ImageView fx:id="a1_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: colorAdjust;">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="a2_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="a3_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="a4_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="110.0" layoutY="39.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <children>
+                              <ImageView fx:id="a5_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="a6_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="a7_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="a8_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="110.0" layoutY="39.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <children>
+                              <ImageView fx:id="c1_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="c2_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="c3_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="c4_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="110.0" layoutY="39.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <children>
+                              <ImageView fx:id="c5_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="c6_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="c7_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="c8_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="110.0" layoutY="39.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <ImageView fx:id="b1_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="b2_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="b3_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="b4_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="110.0" layoutY="39.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <children>
+                              <ImageView fx:id="b5_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="b6_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="b7_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="b8_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="110.0" layoutY="39.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <children>
+                              <ImageView fx:id="d1_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="d2_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="d3_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="d4_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="110.0" layoutY="39.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <children>
+                              <ImageView fx:id="d5_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="d6_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="d7_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="d8_ImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/armchair.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="130.0" layoutY="59.0" GridPane.columnIndex="1">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="32.0" prefWidth="32.0" text="1" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="20.0" layoutY="10.0" prefHeight="32.0" prefWidth="32.0" text="2" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="72.0" layoutY="10.0" prefHeight="32.0" prefWidth="32.0" text="3" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="124.0" layoutY="10.0" prefHeight="32.0" prefWidth="32.0" text="4" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="130.0" layoutY="10.0" GridPane.columnIndex="2">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="32.0" prefWidth="32.0" text="5" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="20.0" layoutY="10.0" prefHeight="32.0" prefWidth="32.0" text="6" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="72.0" layoutY="10.0" prefHeight="32.0" prefWidth="32.0" text="7" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="124.0" layoutY="10.0" prefHeight="32.0" prefWidth="32.0" text="8" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label alignment="CENTER" prefHeight="32.0" prefWidth="32.0" text="B" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="10.0" layoutY="60.0" prefHeight="32.0" prefWidth="32.0" text="A" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="40.0" layoutY="110.0" prefHeight="32.0" prefWidth="32.0" text="D" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="32.0" text="C" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <VBox alignment="CENTER" layoutX="5.0" layoutY="320.0" prefHeight="25.0" prefWidth="560.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label text="TELA" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <VBox alignment="TOP_CENTER" layoutX="598.0" layoutY="125.0" prefHeight="350.0" prefWidth="134.0" style="-fx-border-color: white;">
+               <children>
+                  <Label text="Clientes:" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="44.0" layoutY="11.0" text="Visualizando" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin></Label>
+                  <TextField fx:id="viewing_textField" editable="false">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label layoutX="22.0" layoutY="11.0" text="Tentando comprar" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin></Label>
+                  <TextField fx:id="buying_textField" editable="false" layoutX="11.0" layoutY="28.0">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="generateClients_button" mnemonicParsing="false" style="-fx-background-color: white;" text="Gerar clientes" visible="false">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children></VBox>
+            <Button fx:id="adjustsScreen_button" layoutX="278.0" layoutY="52.0" mnemonicParsing="false" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: rgba(25,25,25, 0.5);" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="167.0" layoutY="146.0" prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: rgb(25, 25, 25);">
+                           <children>
+                              <GridPane fx:id="generateClients_gridpane" alignment="CENTER">
+                                <columnConstraints>
+                                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="251.0" minWidth="10.0" prefWidth="251.0" />
+                                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="194.0" minWidth="10.0" prefWidth="147.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Slider fx:id="ClientsGeneratedAutomatically_button" blockIncrement="1.0" majorTickUnit="1.0" max="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" minorTickCount="0" prefHeight="14.0" prefWidth="30.0" value="1.0" GridPane.columnIndex="1">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor></Slider>
+                                    <Label text="Gerar clientes automaticamente" textFill="WHITE" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="20.0" />
+                                 </padding>
+                              </GridPane>
+                              <GridPane fx:id="timeViewingRamdom_gridpane" alignment="CENTER" layoutX="10.0" layoutY="20.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="17.0" text="Tempo de visualizacao randomizado" textFill="WHITE" />
+                                    <Slider fx:id="viewingTimeIsRamdomized_button" blockIncrement="1.0" layoutX="209.0" layoutY="18.0" majorTickUnit="1.0" max="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" minorTickCount="0" prefHeight="14.0" prefWidth="30.0" value="1.0" GridPane.columnIndex="1">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor></Slider>
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="251.0" minWidth="10.0" prefWidth="251.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="194.0" minWidth="10.0" prefWidth="147.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <padding>
+                                    <Insets bottom="20.0" />
+                                 </padding>
+                              </GridPane>
+                              <GridPane fx:id="timeViewingUser_gridpane" alignment="CENTER" layoutX="10.0" layoutY="115.0" visible="false">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="47.0" text="Tempo que os clientes gastam visualizando" textFill="WHITE" />
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                       <children>
+                                          <Label fx:id="timeViewing_label" text="1s" textFill="WHITE">
+                                             <HBox.margin>
+                                                <Insets right="5.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Slider fx:id="setTimeSpentViewing_button" blockIncrement="1.0" majorTickUnit="5.0" max="5.0" maxHeight="-Infinity" maxWidth="-Infinity" min="1.0" minorTickCount="1" prefHeight="14.0" prefWidth="103.0" value="1.0">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Slider>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="251.0" minWidth="10.0" prefWidth="251.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="194.0" minWidth="10.0" prefWidth="147.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <padding>
+                                    <Insets bottom="20.0" />
+                                 </padding>
+                              </GridPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </graphic>
+            </Button>
+            <Label fx:id="totalAccess_label" layoutX="588.0" layoutY="23.0" text="Acessos totais: 0" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

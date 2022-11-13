@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="AnchorPane_screen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: rgb(25, 25, 25);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controll.SimulationController">
+   <children>
+      <AnchorPane layoutX="350.0" layoutY="70.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="380.0">
+         <children>
+            <GridPane layoutX="15.0" layoutY="15.0" style="-fx-border-color: white;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" />
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" GridPane.columnIndex="1" />
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" GridPane.columnIndex="2" />
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" GridPane.columnIndex="3" />
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" GridPane.columnIndex="4" />
+                     </children>
+                  </GridPane>
+                  <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" GridPane.rowIndex="1">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" />
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" GridPane.columnIndex="1" />
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" GridPane.columnIndex="2" />
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" GridPane.columnIndex="3" />
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" GridPane.columnIndex="4" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane layoutX="10.0" layoutY="80.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" GridPane.rowIndex="2">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" />
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" GridPane.columnIndex="1" />
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" GridPane.columnIndex="2" />
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" GridPane.columnIndex="3" />
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" GridPane.columnIndex="4" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane layoutX="10.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" GridPane.rowIndex="3">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" />
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" GridPane.columnIndex="1" />
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" GridPane.columnIndex="2" />
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" GridPane.columnIndex="3" />
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" GridPane.columnIndex="4" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" GridPane.rowIndex="4">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" />
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" GridPane.columnIndex="1" />
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" GridPane.columnIndex="2" />
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" GridPane.columnIndex="3" />
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: white;" GridPane.columnIndex="4" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </children>
+            </GridPane>
+            <VBox fx:id="car01" alignment="CENTER" layoutX="70.0" layoutY="310.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: rgb(156, 0, 0);">
+               <children>
+                  <Label text="01" textAlignment="CENTER" textFill="WHITE" />
+               </children>
+            </VBox>
+            <VBox fx:id="car05" alignment="CENTER" layoutX="240.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: rgb(0, 156, 0);">
+               <children>
+                  <Label contentDisplay="CENTER" text="05" textAlignment="CENTER" textFill="WHITE" />
+               </children>
+            </VBox>
+            <VBox fx:id="car10" alignment="CENTER" layoutX="240.0" layoutY="210.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: rgb(0, 0, 156);">
+               <children>
+                  <Label text="10" textAlignment="CENTER" textFill="WHITE" />
+               </children>
+            </VBox>
+            <VBox fx:id="car08" alignment="CENTER" layoutX="30.0" layoutY="70.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: rgb(156, 156, 0);">
+               <children>
+                  <Label text="08" textAlignment="CENTER" textFill="WHITE" />
+               </children>
+            </VBox>
+            <VBox fx:id="car11" alignment="CENTER" layoutX="140.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: rgb(156, 0, 156);">
+               <children>
+                  <Label text="11" textAlignment="CENTER" textFill="WHITE" />
+               </children>
+            </VBox>
+            <VBox fx:id="car15" alignment="CENTER" layoutX="210.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: rgb(0, 156, 156);">
+               <children>
+                  <Label prefHeight="30.0" text="15" textAlignment="CENTER" textFill="WHITE" />
+               </children>
+            </VBox>
+            <VBox fx:id="car20" alignment="CENTER" layoutX="280.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: rgb(156, 156, 156);">
+               <children>
+                  <Label text="20" textAlignment="CENTER" textFill="WHITE" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <GridPane layoutX="33.0" layoutY="26.0" style="-fx-background-color: rgba(0,0,0,0.5); -fx-background-radius: 10;">
+         <children>
+            <Button fx:id="home_Button" mnemonicParsing="false" style="-fx-background-color: rgba(0,0,0, 0); -fx-background-radius: 10;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Cambria" size="26.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/home_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="4.0" right="15.0" top="4.0" />
+               </padding>
+            </Button>
+            <Button fx:id="start_Button" mnemonicParsing="false" style="-fx-background-color: rgba(0,0,0, 0); -fx-background-radius: 10;" GridPane.columnIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Cambria" size="26.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="start_imageView" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/play_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="4.0" left="15.0" top="4.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Button>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <GridPane hgap="15.0" layoutX="60.0" layoutY="100.0" vgap="15.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane hgap="15.0" vgap="15.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" style="-fx-background-color: rgb(156, 0, 0);">
+                     <children>
+                        <Label prefHeight="30.0" text="01SH" textAlignment="CENTER" textFill="WHITE" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" GridPane.columnIndex="1">
+                     <children>
+                        <Label text="Velocidade" textAlignment="CENTER" textFill="WHITE" />
+                        <Slider fx:id="slider_car01" max="20.0" value="10.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+            <GridPane hgap="15.0" layoutX="10.0" layoutY="10.0" vgap="15.0" GridPane.rowIndex="1">
+               <children>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" style="-fx-background-color: rgb(0, 156, 0);">
+                     <children>
+                        <Label prefHeight="30.0" text="05SA" textAlignment="CENTER" textFill="WHITE" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" GridPane.columnIndex="1">
+                     <children>
+                        <Label text="Velocidade" textAlignment="CENTER" textFill="WHITE" />
+                        <Slider fx:id="slider_car05" max="20.0" value="10.0" />
+                     </children>
+                  </VBox>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" valignment="CENTER" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane hgap="15.0" layoutX="10.0" layoutY="41.0" vgap="15.0" GridPane.rowIndex="2">
+               <children>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" style="-fx-background-color: rgb(0, 0, 156);">
+                     <children>
+                        <Label prefHeight="30.0" text="10SH" textAlignment="CENTER" textFill="WHITE" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" GridPane.columnIndex="1">
+                     <children>
+                        <Label text="Velocidade" textAlignment="CENTER" textFill="WHITE" />
+                        <Slider fx:id="slider_car10" max="20.0" value="10.0" />
+                     </children>
+                  </VBox>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" valignment="CENTER" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane hgap="15.0" layoutX="10.0" layoutY="41.0" vgap="15.0" GridPane.rowIndex="3">
+               <children>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" style="-fx-background-color: rgb(156, 156, 0);">
+                     <children>
+                        <Label prefHeight="30.0" text="08SH" textAlignment="CENTER" textFill="WHITE" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" GridPane.columnIndex="1">
+                     <children>
+                        <Label text="Velocidade" textAlignment="CENTER" textFill="WHITE" />
+                        <Slider fx:id="slider_car08" max="20.0" value="10.0" />
+                     </children>
+                  </VBox>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" valignment="CENTER" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane hgap="15.0" layoutX="10.0" layoutY="101.0" vgap="15.0" GridPane.rowIndex="4">
+               <children>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" style="-fx-background-color: rgb(156, 0, 156);">
+                     <children>
+                        <Label prefHeight="30.0" text="11SA" textAlignment="CENTER" textFill="WHITE" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" GridPane.columnIndex="1">
+                     <children>
+                        <Label text="Velocidade" textAlignment="CENTER" textFill="WHITE" />
+                        <Slider fx:id="slider_car11" max="20.0" value="10.0" />
+                     </children>
+                  </VBox>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" valignment="CENTER" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane hgap="15.0" vgap="15.0" GridPane.rowIndex="6">
+               <children>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" style="-fx-background-color: rgb(156, 156, 156);">
+                     <children>
+                        <Label prefHeight="30.0" text="20SA" textAlignment="CENTER" textFill="WHITE" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" GridPane.columnIndex="1">
+                     <children>
+                        <Label text="Velocidade" textAlignment="CENTER" textFill="WHITE" />
+                        <Slider fx:id="slider_car20" max="20.0" value="10.0" />
+                     </children>
+                  </VBox>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" valignment="CENTER" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane hgap="15.0" vgap="15.0" GridPane.rowIndex="5">
+               <children>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" style="-fx-background-color: rgb(0, 156, 156);">
+                     <children>
+                        <Label prefHeight="30.0" text="15SH" textAlignment="CENTER" textFill="WHITE" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" GridPane.columnIndex="1">
+                     <children>
+                        <Label text="Velocidade" textAlignment="CENTER" textFill="WHITE" />
+                        <Slider fx:id="slider_car15" max="20.0" value="10.0" />
+                     </children>
+                  </VBox>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" valignment="CENTER" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

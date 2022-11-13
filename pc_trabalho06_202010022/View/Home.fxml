@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="AnchorPane_TelaIncial" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: rgb(25, 25, 25);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controll.HomeController">
+   <children>
+      <ImageView fitHeight="603.0" fitWidth="750.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/background.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: rgba(0, 0, 0, 0.15);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="14.0" layoutY="36.0" text="Leitores e Escritores" textFill="WHITE">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Label>
+            <Label layoutX="387.0" layoutY="107.0" text="Simulacao" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <GridPane fx:id="botoes" layoutX="511.0" layoutY="400.0" style="-fx-background-color: rgba(0, 0, 0, 0.15); -fx-background-radius: 20;">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="Iniciar_Button_in" mnemonicParsing="false" style="-fx-background-color: rgba(0,0,0, 0); -fx-background-radius: 10;" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Cambria" size="26.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="4.0" left="15.0" right="30.0" top="4.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/nextPage_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="Ajuda_Button_in" mnemonicParsing="false" style="-fx-background-color: rgba(0,0,0, 0); -fx-background-radius: 10;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Cambria" size="26.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="4.0" left="30.0" right="15.0" top="4.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/help_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </GridPane>
+         </children></AnchorPane>
+      <Button fx:id="explicacao_Button" alignment="CENTER" mnemonicParsing="false" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: rgba(0,0,0,0);" visible="false">
+         <padding>
+            <Insets top="100.0" />
+         </padding>
+         <graphic>
+            <TextArea fx:id="Explicacao_TextArea" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.7" prefHeight="183.0" prefWidth="546.0" text="Explicacao sobre  problema:&#10;O problema dos leitores e escritores consiste numa situacao em que um ou mais &#10;processos precisa ler um buffer, sem modificalo, sendo estes os leitores, enquan-&#10;um ou mais processo precisa modificar este buffer, sendo estes os escritores.&#10;&#10;Explicacao sobre o programa:&#10;Este programa consiste num simulador para testar solucoes para o problema dos &#10;leitores escritores. Temos aqui uma sala de cinema, e uma Thread que gera novos&#10;clientes a cada dois segundos.  Quando os processos estao apenas lendo o banco &#10;de dados, um tempo entre 1 e 5 segundos eh determinado aleatoriamente para os&#10;fazer esperar dentro da zona critica, tornando a simulacao mais realista. No entan-&#10;to, esta opcao pode ser desabilitada e o usuario pode determinar o tempo manual-&#10;mente. Alem disso, o usuario tambem pode desabilitar a geracao automatica de cli-&#10;entes.&#10;&#10;A solucao implemetada foi a mesma mostrada no livro Sistemas Operacionais Mo-&#10;dernos (quarta edicao), utilizando semaforos e dando prioridade aos leitores. Por &#10;meio desta simulacao, podemos verificar que esta nao eh uma boa solucao, pelo &#10;menos para situacoes com usuarios, pois por vezes, varios clientes permanecem &#10;esperando o acesso para conseguir realizar a compra de ingressos (modificar &#10;o buffer).">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TextArea>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

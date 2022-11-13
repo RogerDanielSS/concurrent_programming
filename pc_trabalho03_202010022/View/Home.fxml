@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="AnchorPane_TelaIncial" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #303030;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controll.HomeController">
+   <children>
+      <ImageView fitHeight="603.0" fitWidth="750.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/stary-gaffbf2eee_1920.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="24.0" text="Tuneis de trem" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="72.0" />
+         </font></Label>
+      <Label layoutX="41.0" layoutY="75.0" text="Simulador" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="Iniciar_Button_in" layoutX="266.0" layoutY="362.0" mnemonicParsing="false" style="-fx-background-color: #212121; -fx-background-radius: 10;">
+         <font>
+            <Font name="Cambria" size="26.0" />
+         </font>
+         <padding>
+            <Insets bottom="4.0" left="30.0" right="30.0" top="4.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <Label text="Simulacao" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="36.0" />
+               </font>
+            </Label>
+         </graphic>
+      </Button>
+      <Label layoutX="24.0" layoutY="450.0" text="e, icones, no 8icon.com " textFill="WHITE" />
+      <Label layoutX="24.0" layoutY="433.0" text="*Imagens de fundo, arquivos de audio e icones nao tem copyright e foram coletadas, fundo e audio  no site pixabay.com" textFill="WHITE" />
+   </children>
+</AnchorPane>

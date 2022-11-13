@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="AnchorPane_TelaIncial" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controll.HomeController">
+   <children>
+      <ImageView fitHeight="603.0" fitWidth="750.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/dinner_background.jpg" />
+         </image>
+         <effect>
+            <BoxBlur />
+         </effect>
+      </ImageView>
+      <AnchorPane prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: rgba(0, 0, 0, 0.15);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="14.0" layoutY="36.0" text="Jantar dos filosofos" textFill="WHITE">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Label>
+            <Label layoutX="387.0" layoutY="107.0" text="Simulacao" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <GridPane fx:id="botoes" layoutX="511.0" layoutY="400.0" style="-fx-background-color: rgba(0, 0, 0, 0.15); -fx-background-radius: 20;">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="Iniciar_Button_in" mnemonicParsing="false" style="-fx-background-color: rgba(0,0,0, 0); -fx-background-radius: 10;" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Cambria" size="26.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="4.0" left="15.0" right="30.0" top="4.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/nextPage_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="Ajuda_Button_in" mnemonicParsing="false" style="-fx-background-color: rgba(0,0,0, 0); -fx-background-radius: 10;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Cambria" size="26.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="4.0" left="30.0" right="15.0" top="4.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/help_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </GridPane>
+         </children></AnchorPane>
+      <Button fx:id="explicacao_Button" alignment="CENTER" mnemonicParsing="false" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: rgba(0,0,0,0);" visible="false">
+         <padding>
+            <Insets top="100.0" />
+         </padding>
+         <graphic>
+            <TextArea fx:id="Explicacao_TextArea" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.7" text="Explicacao sobre  problema:&#10;O jantar dos filosofos eh um dos problemas classicos da computacao&#10;concorrente/paralela e consiste em 5 filosofos que estao jantando es-&#10;paguete, porem, devido deste estar muito escorregadio, cada filosofo&#10;precisa de dois garfos para comer. Como so ha 5 garfos na mesa, es-&#10;ses filosofos irao ter que disputar os garfos.&#10;&#10;Explicacao sobre o programa:&#10;Este programa foi implementado utilizando a classe Thread do Java, &#10;sendo cada filosofa uma Thread diferente. Sao estabelecidos tres &#10;estados para cada filosofa: pensando, com fome e comendo. Eh &#10;possivel modificar o tempo que cada filosofa passa pensando e &#10;comendo a partir do botao de ajustes.">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TextArea>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

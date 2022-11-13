@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="AnchorPane_Simulacao" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #252525;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controll.SimulacaoController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="750.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/stary-gaffbf2eee_1920.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="14.0" layoutY="429.0" style="-fx-background-color: #303030; -fx-background-radius: 10;">
+         <children>
+            <Label text="Trem 1" textFill="WHITE" />
+            <GridPane style="-fx-background-color: #303030; -fx-background-radius: 10;">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Slider fx:id="Train1_Slider_In" GridPane.columnIndex="1">
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Slider>
+                  <Label text="Vel" textFill="WHITE">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="591.0" layoutY="429.0" style="-fx-background-color: #303030; -fx-background-radius: 10;">
+         <children>
+            <Label text="Trem 2" textFill="WHITE" />
+            <GridPane style="-fx-background-color: #303030; -fx-background-radius: 10;">
+               <children>
+                  <Slider fx:id="Train2_Slider_In" GridPane.columnIndex="1">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN" />
+                     </effect>
+                  </Slider>
+                  <Label text="Vel" textFill="WHITE">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </VBox>
+      <HBox fx:id="Botoes_button" alignment="CENTER" layoutX="306.0" layoutY="14.0" style="-fx-background-color: #303030; -fx-background-radius: 10;">
+         <children>
+            <Button fx:id="Home_Button" mnemonicParsing="false" style="-fx-background-color: #303030; -fx-background-radius: 10;">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8-home-150.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="Play_Button" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #303030; -fx-background-radius: 10;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8-play-64.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+         </padding></HBox>
+      <ImageView fx:id="Train1_ImageView_Out" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" x="2.0" y="180.0">
+         <image>
+            <Image url="@../Images/icons8-train-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Train2_ImageView_Out" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" x="703.0" y="250.0">
+         <image>
+            <Image url="@../Images/icons8-train-64%20-%20inverted.png" />
+         </image>
+      </ImageView>
+      <Line endX="150.0" fill="WHITE" layoutY="220.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="OUTSIDE" />
+      <Line endX="150.0" fill="WHITE" layoutX="600.0" layoutY="290.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="OUTSIDE" />
+      <Line endX="150.0" fill="WHITE" layoutY="290.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="OUTSIDE" />
+      <Line endX="150.0" fill="WHITE" layoutX="600.0" layoutY="220.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="OUTSIDE" />
+      <Line endX="150.0" fill="WHITE" layoutX="152.0" layoutY="255.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="OUTSIDE" />
+      <Line endX="150.0" fill="WHITE" layoutX="300.0" layoutY="220.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="OUTSIDE" />
+      <Line endX="150.0" fill="WHITE" layoutX="300.0" layoutY="290.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="OUTSIDE" />
+      <Line endX="150.0" fill="WHITE" layoutX="450.0" layoutY="255.0" stroke="WHITE" strokeLineCap="ROUND" strokeType="OUTSIDE" />
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="510.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-train-track-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="210.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-train-track-50.png" />
+         </image>
+      </ImageView>
+      <Circle fx:id="RegiaoCritica1_shape" fill="#831d1c" layoutX="225.0" layoutY="180.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="RegiaoCritica2_shape" fill="#831d1c" layoutX="525.0" layoutY="180.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <VBox fx:id="Colisao_VBox" alignment="CENTER" layoutX="188.0" layoutY="130.0" prefHeight="240.0" prefWidth="375.0" style="-fx-background-color: #212121; -fx-background-radius: 10;" visible="false">
+         <children>
+            <Label prefHeight="15.0" prefWidth="372.0" text="  Houve uma colisao" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="42.0" />
+               </font>
+            </Label>
+            <Button fx:id="ReiniciarSimulacao_Button" mnemonicParsing="false" style="-fx-background-color: #303030; -fx-background-radius: 10;" text=" Reiniciar simulacao" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8-restart-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Cambria" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
